@@ -1,0 +1,21 @@
+{
+  "appId": "com.polyonic.starter",
+  "directories": {
+    "buildResources": "./resources/electron"
+  }
+  "mac": {
+    "category": "public.app-category.developer-tools",
+    "background":"./build/osx/dmg-background.png",
+    "icon":"./build/osx/dmg-background.png"
+  },
+  "linux": {
+    "target": [
+      "AppImage",
+      "deb"
+    ]
+  },
+  "win": {
+    "target": "portable",
+    "icon": "build/windows/icon.ico"
+  }
+}
