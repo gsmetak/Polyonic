@@ -4,6 +4,7 @@
   "description": "A Polyonic Electron Ionic 2 starter application",
   "main": "main.js",
   "scripts": {
+    "debug-main":"electron --inspect-brk=5858 .",
     "build": "ionic-app-scripts build",
     "clean": "ionic-app-scripts clean",
     "dev": "gulp dev",

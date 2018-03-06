@@ -6,7 +6,12 @@ const url = require('url')
 
 let mainWindow
 
+// Tip use the debugger keyword when debugging the main process
+// electron --inspect-brk=5858 .
+// or npm run debug-main
+
 function createWindow () {
+  // debugger
   mainWindow = new BrowserWindow({width: 1800, height: 1200})
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'www/index.html'),
