@@ -2,10 +2,9 @@
   "appId": "com.polyonic.starter",
   "directories": {
     "buildResources": "./resources/electron"
-  }
+  },
   "mac": {
     "category": "public.app-category.developer-tools",
-    "background":"./build/osx/dmg-background.png",
     "icon":"./build/osx/dmg-background.png"
   },
   "linux": {
@@ -14,8 +13,21 @@
       "deb"
     ]
   },
-  "win": {
-    "target": "portable",
-    "icon": "build/windows/icon.ico"
+  "win" : {
+    "target":"nsis",
+    "icon": "resources/electron/windows/icon.ico"
+  },
+  "squirrelWindows": {
+    "msi":"true"
+  },
+  "msi" : {
+    "warningsAsErrors": false
+  },
+  "nsis" : {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
+  },
+  "appx": {
+    "publisherDisplayName":"Polyonic Ltd"
   }
 }
