@@ -12,7 +12,11 @@ let mainWindow
 
 function createWindow () {
   // debugger
-  mainWindow = new BrowserWindow({width: 1800, height: 1200})
+  mainWindow = new BrowserWindow({
+    width: 1800,
+    height: 1200,
+    icon: path.join(__dirname, './resources/electron/icons/64x64.png')
+  })
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'www/index.html'),
     protocol: 'file:',
