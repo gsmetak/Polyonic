@@ -1,6 +1,6 @@
 {
   "name": "polyonic",
-  "version":"1.2.0",
+  "version":"1.1.0",
   "productName": "Polyonic",
   "description": "A Polyonic Electron Ionic 2 starter application",
   "main": "main.js",
